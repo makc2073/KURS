@@ -29,7 +29,9 @@ namespace KURS
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            TestForm newForm = new TestForm();
+            newForm.Show();
+            this.Visible = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
