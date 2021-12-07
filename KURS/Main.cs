@@ -38,5 +38,21 @@ namespace KURS
         {
 
         }
+
+        
+        private void pictureBoxExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBoxExit_MouseMove(object sender, MouseEventArgs e)
+        {
+            pictureBoxExit.Size = new Size(146, 147);
+        }
+
+        private void pictureBoxExit_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBoxExit.Size = new Size(136, 137);
+        }
     }
 }
