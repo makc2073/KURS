@@ -83,6 +83,16 @@ namespace KURS.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _8187a44741ec1bc337686b53ce22cc101 {
+            get {
+                object obj = ResourceManager.GetObject("8187a44741ec1bc337686b53ce22cc101", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Apple {
             get {
                 object obj = ResourceManager.GetObject("Apple", resourceCulture);
@@ -176,6 +186,16 @@ namespace KURS.Properties {
         internal static System.Drawing.Bitmap Start2 {
             get {
                 object obj = ResourceManager.GetObject("Start2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sun_102 {
+            get {
+                object obj = ResourceManager.GetObject("sun-102", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

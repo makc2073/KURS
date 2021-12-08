@@ -46,6 +46,10 @@ namespace KURS
             this.MaxComdo = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBoxExit = new System.Windows.Forms.PictureBox();
+            this.labelUScore = new System.Windows.Forms.Label();
+            this.labelScore = new System.Windows.Forms.Label();
+            this.labelUname = new System.Windows.Forms.Label();
+            this.labelUser = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxApple)).BeginInit();
@@ -166,7 +170,7 @@ namespace KURS
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.pictureBox2.Image = global::KURS.Properties.Resources._8187a44741ec1bc337686b53ce22cc10;
+            this.pictureBox2.Image = global::KURS.Properties.Resources._8187a44741ec1bc337686b53ce22cc101;
             this.pictureBox2.Location = new System.Drawing.Point(420, 324);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(378, 254);
@@ -277,6 +281,54 @@ namespace KURS
             this.pictureBoxExit.MouseLeave += new System.EventHandler(this.pictureBoxExit_MouseLeave);
             this.pictureBoxExit.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxExit_MouseMove);
             // 
+            // labelUScore
+            // 
+            this.labelUScore.AutoSize = true;
+            this.labelUScore.BackColor = System.Drawing.Color.Transparent;
+            this.labelUScore.Font = new System.Drawing.Font("Showcard Gothic", 20F);
+            this.labelUScore.ForeColor = System.Drawing.Color.Gold;
+            this.labelUScore.Location = new System.Drawing.Point(1168, 42);
+            this.labelUScore.Name = "labelUScore";
+            this.labelUScore.Size = new System.Drawing.Size(31, 33);
+            this.labelUScore.TabIndex = 21;
+            this.labelUScore.Text = "0";
+            // 
+            // labelScore
+            // 
+            this.labelScore.AutoSize = true;
+            this.labelScore.BackColor = System.Drawing.Color.Transparent;
+            this.labelScore.Font = new System.Drawing.Font("Showcard Gothic", 20F);
+            this.labelScore.ForeColor = System.Drawing.Color.Gold;
+            this.labelScore.Location = new System.Drawing.Point(978, 42);
+            this.labelScore.Name = "labelScore";
+            this.labelScore.Size = new System.Drawing.Size(168, 33);
+            this.labelScore.TabIndex = 20;
+            this.labelScore.Text = "User Score";
+            // 
+            // labelUname
+            // 
+            this.labelUname.AutoSize = true;
+            this.labelUname.BackColor = System.Drawing.Color.Transparent;
+            this.labelUname.Font = new System.Drawing.Font("Showcard Gothic", 20F);
+            this.labelUname.ForeColor = System.Drawing.Color.Gold;
+            this.labelUname.Location = new System.Drawing.Point(1168, 9);
+            this.labelUname.Name = "labelUname";
+            this.labelUname.Size = new System.Drawing.Size(31, 33);
+            this.labelUname.TabIndex = 19;
+            this.labelUname.Text = "0";
+            // 
+            // labelUser
+            // 
+            this.labelUser.AutoSize = true;
+            this.labelUser.BackColor = System.Drawing.Color.Transparent;
+            this.labelUser.Font = new System.Drawing.Font("Showcard Gothic", 20F);
+            this.labelUser.ForeColor = System.Drawing.Color.Gold;
+            this.labelUser.Location = new System.Drawing.Point(1058, 9);
+            this.labelUser.Name = "labelUser";
+            this.labelUser.Size = new System.Drawing.Size(81, 33);
+            this.labelUser.TabIndex = 18;
+            this.labelUser.Text = "User";
+            // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -286,6 +338,10 @@ namespace KURS
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1240, 733);
             this.ControlBox = false;
+            this.Controls.Add(this.labelUScore);
+            this.Controls.Add(this.labelScore);
+            this.Controls.Add(this.labelUname);
+            this.Controls.Add(this.labelUser);
             this.Controls.Add(this.pictureBoxExit);
             this.Controls.Add(this.MaxComdo);
             this.Controls.Add(this.label4);
@@ -341,5 +397,9 @@ namespace KURS
         private System.Windows.Forms.Label MaxComdo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBoxExit;
+        private System.Windows.Forms.Label labelUScore;
+        private System.Windows.Forms.Label labelScore;
+        private System.Windows.Forms.Label labelUname;
+        private System.Windows.Forms.Label labelUser;
     }
 }

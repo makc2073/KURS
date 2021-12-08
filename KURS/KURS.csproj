@@ -61,6 +61,7 @@
     <Compile Include="TestForm.Designer.cs">
       <DependentUpon>TestForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +101,7 @@
     <None Include="Resources\test2.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\sun-102.gif" />
     <None Include="Resources\spinner.gif" />
     <None Include="Resources\Start.png" />
     <None Include="Resources\Start2.png" />
@@ -113,6 +115,7 @@
     <None Include="Resources\8187a44741ec1bc337686b53ce22cc10.gif" />
     <None Include="Resources\194407561_a26cf193c0a242ca90fcef65a272723a.png" />
     <None Include="Resources\Exit.png" />
+    <None Include="Resources\8187a44741ec1bc337686b53ce22cc101.gif" />
     <Content Include="Resources\icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

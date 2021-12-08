@@ -17,13 +17,19 @@ namespace KURS
         public TestForm()
         {
             InitializeComponent();
-          
+           
         }
+        
         int score;
         int combo;
         int maxcombo = 0;
+       
         private void TestForm_Load(object sender, EventArgs e)
         {
+            
+            labelUname.Text = User.uname;
+            labelUScore.Text = User.uscore;
+            this.Location = new Point(200,200);
             Random rand = new Random();
             int[] loc = new[] { 632, 132, 382, 882 };
             for (int i = loc.Length - 1; i >= 1; i--)
@@ -54,7 +60,7 @@ namespace KURS
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
-            pictureBox1.BackgroundImage = Properties.Resources.Back2;
+            pictureBox1.BackgroundImage = Properties.Resources.Back2;   
         }
         private void pictureBox1_MouseLeave(object sender, EventArgs e)
         {
@@ -75,6 +81,11 @@ namespace KURS
             else
             { combo = 0; Result.ForeColor = Color.Red; Result.Text = "false";  }
             sc();
+            if (combo == 5)
+            {
+                User.uscore = User.uscore + 5;
+                User.upd();
+            }
         }
         private void pictureBoxApple_Click(object sender, EventArgs e)
         {
@@ -85,6 +96,11 @@ namespace KURS
             else
             { combo = 0; Result.ForeColor = Color.Red; Result.Text = "false"; }
             sc();
+            if (combo == 5)
+            {
+                User.uscore = User.uscore + 5;
+                User.upd();
+            }
         }
 
         private void pictureBoxMouse_Click(object sender, EventArgs e)
@@ -96,6 +112,11 @@ namespace KURS
             else
             { combo = 0; Result.ForeColor = Color.Red; Result.Text = "false"; }
             sc();
+            if (combo == 5)
+            {
+                User.uscore = User.uscore + 5;
+                User.upd();
+            }
         }
 
         private void pictureBoxCheese_Click(object sender, EventArgs e)
@@ -107,6 +128,11 @@ namespace KURS
             else
             { combo = 0; Result.ForeColor = Color.Red; Result.Text = "false";  }
             sc();
+            if (combo == 5)
+            {
+                User.uscore = User.uscore + 5;
+                User.upd();
+            }
         }
         void sc()
         {
@@ -129,7 +155,7 @@ namespace KURS
             pictureBoxApple.Visible = false;
             pictureBox2.Visible = true;
 
-            await Task.Delay(2000);
+            await Task.Delay(1000);
             Random rand = new Random();
             int[] loc = new[] { 632, 132, 382, 882 };
             for (int i = loc.Length - 1; i >= 1; i--)
