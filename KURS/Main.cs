@@ -111,5 +111,7 @@ namespace KURS
         {
             c = dataGridViewBoard.CurrentCell.RowIndex;
         }
+
+      
     }
 }

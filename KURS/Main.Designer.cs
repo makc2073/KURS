@@ -41,10 +41,10 @@ namespace KURS
             this.Enter = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.name = new System.Windows.Forms.Label();
             this.LabelScore = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBoard)).BeginInit();
@@ -178,19 +178,6 @@ namespace KURS
             this.textBox1.Size = new System.Drawing.Size(188, 41);
             this.textBox1.TabIndex = 24;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Font = new System.Drawing.Font("Showcard Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.YellowGreen;
-            this.button1.Location = new System.Drawing.Point(924, 68);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 41);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // name
             // 
             this.name.AutoSize = true;
@@ -226,6 +213,19 @@ namespace KURS
             this.label2.Size = new System.Drawing.Size(97, 33);
             this.label2.TabIndex = 27;
             this.label2.Text = "Name:";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Font = new System.Drawing.Font("Showcard Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.YellowGreen;
+            this.button1.Location = new System.Drawing.Point(924, 68);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(50, 41);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "+";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // Main
             // 
@@ -273,10 +273,10 @@ namespace KURS
 #pragma warning restore CS0108 // "Main.Name" скрывает наследуемый член "Control.Name". Если скрытие было намеренным, используйте ключевое слово new.
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label name;
         private System.Windows.Forms.Label LabelScore;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

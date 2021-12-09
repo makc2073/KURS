@@ -97,7 +97,7 @@ namespace KURS
             this.pictureBoxPen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxPen.TabIndex = 3;
             this.pictureBoxPen.TabStop = false;
-            this.pictureBoxPen.Click += new System.EventHandler(this.pictureBoxPen_Click);
+            this.pictureBoxPen.Click += new System.EventHandler(this.pictureBoxPen_ClickAsync);
             this.pictureBoxPen.MouseLeave += new System.EventHandler(this.pictureBoxPen_MouseLeave);
             this.pictureBoxPen.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxPen_MouseMove);
             // 
@@ -287,7 +287,7 @@ namespace KURS
             this.labelUScore.BackColor = System.Drawing.Color.Transparent;
             this.labelUScore.Font = new System.Drawing.Font("Showcard Gothic", 20F);
             this.labelUScore.ForeColor = System.Drawing.Color.Gold;
-            this.labelUScore.Location = new System.Drawing.Point(1168, 42);
+            this.labelUScore.Location = new System.Drawing.Point(202, 197);
             this.labelUScore.Name = "labelUScore";
             this.labelUScore.Size = new System.Drawing.Size(31, 33);
             this.labelUScore.TabIndex = 21;
@@ -299,11 +299,11 @@ namespace KURS
             this.labelScore.BackColor = System.Drawing.Color.Transparent;
             this.labelScore.Font = new System.Drawing.Font("Showcard Gothic", 20F);
             this.labelScore.ForeColor = System.Drawing.Color.Gold;
-            this.labelScore.Location = new System.Drawing.Point(978, 42);
+            this.labelScore.Location = new System.Drawing.Point(12, 197);
             this.labelScore.Name = "labelScore";
-            this.labelScore.Size = new System.Drawing.Size(168, 33);
+            this.labelScore.Size = new System.Drawing.Size(177, 33);
             this.labelScore.TabIndex = 20;
-            this.labelScore.Text = "User Score";
+            this.labelScore.Text = "User Score:";
             // 
             // labelUname
             // 
@@ -311,7 +311,7 @@ namespace KURS
             this.labelUname.BackColor = System.Drawing.Color.Transparent;
             this.labelUname.Font = new System.Drawing.Font("Showcard Gothic", 20F);
             this.labelUname.ForeColor = System.Drawing.Color.Gold;
-            this.labelUname.Location = new System.Drawing.Point(1168, 9);
+            this.labelUname.Location = new System.Drawing.Point(202, 164);
             this.labelUname.Name = "labelUname";
             this.labelUname.Size = new System.Drawing.Size(31, 33);
             this.labelUname.TabIndex = 19;
@@ -323,11 +323,11 @@ namespace KURS
             this.labelUser.BackColor = System.Drawing.Color.Transparent;
             this.labelUser.Font = new System.Drawing.Font("Showcard Gothic", 20F);
             this.labelUser.ForeColor = System.Drawing.Color.Gold;
-            this.labelUser.Location = new System.Drawing.Point(1058, 9);
+            this.labelUser.Location = new System.Drawing.Point(92, 164);
             this.labelUser.Name = "labelUser";
-            this.labelUser.Size = new System.Drawing.Size(81, 33);
+            this.labelUser.Size = new System.Drawing.Size(90, 33);
             this.labelUser.TabIndex = 18;
-            this.labelUser.Text = "User";
+            this.labelUser.Text = "User:";
             // 
             // TestForm
             // 

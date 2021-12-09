@@ -13,9 +13,9 @@ namespace KURS
         public static string uscore;
         public static void upd()
         {
-           int s = Convert.ToInt32(uscore);
+           
             string connectionString = @"Data Source=10.10.1.24;Initial Catalog=MakcKURS;User ID=pro-41;Password=Pro_41student";
-            string sqlExpression = "UPDATE Users SET Score = "+ s +" WHERE Name='"+ uname +"'";
+            string sqlExpression = "UPDATE Users SET Score = "+ uscore +" WHERE Name='"+ uname +"'";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();

@@ -17,19 +17,21 @@ namespace KURS
         public TestForm()
         {
             InitializeComponent();
-           
+
         }
-        
+
         int score;
         int combo;
         int maxcombo = 0;
-       
+        int addscore = 0;
         private void TestForm_Load(object sender, EventArgs e)
         {
-            
+
             labelUname.Text = User.uname;
             labelUScore.Text = User.uscore;
-            this.Location = new Point(200,200);
+            addscore = Convert.ToInt32(User.uscore);
+
+            this.Location = new Point(200, 200);
             Random rand = new Random();
             int[] loc = new[] { 632, 132, 382, 882 };
             for (int i = loc.Length - 1; i >= 1; i--)
@@ -55,24 +57,34 @@ namespace KURS
         {
             this.Close();
             Main newForm = new Main();
-            newForm.Show();       
+            newForm.Show();
         }
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
-            pictureBox1.BackgroundImage = Properties.Resources.Back2;   
+            pictureBox1.BackgroundImage = Properties.Resources.Back2;
         }
         private void pictureBox1_MouseLeave(object sender, EventArgs e)
         {
             pictureBox1.BackgroundImage = Properties.Resources.Back;
-           
+
         }
         void locResult(Point c)
         {
             c.Y = 230;
             Result.Location = c;
         }
-        private void pictureBoxPen_Click(object sender, EventArgs e)
+        async Task addscAsync()
+        {
+            
+            addscore = addscore + 5;
+            User.uscore = addscore.ToString();
+            labelUScore.Text = labelUScore.Text + "+ 5";
+            await Task.Delay(1000);
+            labelUScore.Text = addscore.ToString();
+            User.upd();
+        }
+        private void pictureBoxPen_ClickAsync(object sender, EventArgs e)
         {
             Result.Visible = true;
             locResult(pictureBoxPen.Location);
@@ -82,9 +94,8 @@ namespace KURS
             { combo = 0; Result.ForeColor = Color.Red; Result.Text = "false";  }
             sc();
             if (combo == 5)
-            {
-                User.uscore = User.uscore + 5;
-                User.upd();
+            { 
+                addscAsync();
             }
         }
         private void pictureBoxApple_Click(object sender, EventArgs e)
@@ -98,8 +109,7 @@ namespace KURS
             sc();
             if (combo == 5)
             {
-                User.uscore = User.uscore + 5;
-                User.upd();
+                addscAsync();
             }
         }
 
@@ -114,8 +124,7 @@ namespace KURS
             sc();
             if (combo == 5)
             {
-                User.uscore = User.uscore + 5;
-                User.upd();
+                addscAsync();
             }
         }
 
@@ -130,8 +139,9 @@ namespace KURS
             sc();
             if (combo == 5)
             {
-                User.uscore = User.uscore + 5;
-                User.upd();
+
+               
+                addscAsync();
             }
         }
         void sc()
